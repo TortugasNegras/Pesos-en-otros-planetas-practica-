@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pesos en otros planetas</title>
+    <style>
+      body
+      {
+          background-color: #33d6ff;
+          color: white;
+          font-family: Helvetica;
+          border-style: Inset;
+          border: #00ccff 10px Inset;
+
+      }
+      strong
+      {
+        background-color: #FFFF00;
+        color: black;
+      }
+      </body>
+    </style>
+  </head>
+  <body>
+<h1>Este es mi primer proyecto</h1>
+<p>Es un programa que te dice con base a tu peso cuanto pesarias en otros planetas del sistema solar.</p>
+<script type="text/javascript">
+  alert("Hola, soy Tortubot y te puedo decir cual es tu peso en distintos planetas")
+  alert("Pero primero...")
+  nombre = prompt("Cual es tu nombre?")
+  alert("Ok " + nombre + " Vamos a empezar...")
+  var usuario = prompt("Cual es tu peso?")
+  var planeta = parseInt(prompt("Elige tu planeta: Mercurio=1, Venus=2, Marte=3, Jupiter=4, Saturno=5, Urano=6 o Neptuno=7 (y Luna=8 si quieres :v)."));
+  var peso = parseInt(usuario);
+  peso_final = parseInt(peso_final);
+
+  var g_Tierra = 9.8;
+  var g_Mercurio = 3.7;
+  var g_Venus = 8.8;
+  var g_Saturno = 10.44;
+  var g_Urano = 8.7;
+  var g_Neptuno = 11.1;
+  var g_Luna = 1.2;
+  var g_Marte = 3.7;
+  var g_Jupiter = 24.8;
+  var peso_final;
+
+  if (planeta == 1)
+  {
+    peso_final = peso * g_Mercurio / g_Tierra;
+  }
+  if (planeta == 2)
+  {
+    peso_final = peso * g_Venus / g_Tierra;
+  }
+  if (planeta == 3)
+  {
+    peso_final = peso * g_Marte / g_Tierra;
+  }
+  else if (planeta == 4)
+  {
+    peso_final = peso * g_Jupiter / g_Tierra;
+  }
+  if (planeta == 5)
+  {
+    peso_final = peso * g_Saturno / g_Tierra;
+  }
+  if (planeta == 6)
+  {
+    peso_final = peso * g_Urano / g_Tierra;
+  }
+  if (planeta == 7)
+  {
+    peso_final = peso * g_Neptuno / g_Tierra;
+  }
+  if (planeta == 8)
+  {
+    peso_final = peso * g_Luna / g_Tierra;
+  }
+
+  document.write(nombre + ", Tu peso es: <strong>" + (peso_final.toFixed(2)) + " kg</strong>");
+
+
+</script>
+  </body>
+</html>
